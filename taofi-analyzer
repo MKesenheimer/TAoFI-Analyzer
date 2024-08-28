@@ -100,7 +100,7 @@ def run(directory, port, debug=False):
 
     app.layout = html.Div([
             html.Div([
-                html.H4('Research by Raelize'),
+                html.H4('Fault Injection Analysis'),
             ],style={'width':'80%','border-style':'none','margin':'0 auto'}),               
             html.Div([
                 html.Button(f"Update", id='update-button', n_clicks=0, style={'width':'20%'}),
@@ -446,7 +446,7 @@ if __name__ == "__main__":
     __version__ = "0.1"
 
     parser = argparse.ArgumentParser(
-        description="analyzer.py v%s - Raelize Glitch Analyzer" % __version__,
+        description="analyzer.py v%s - Fault Injection Analyzer" % __version__,
         prog="analyzer"
     ) 
     parser.add_argument("--directory",help="Database directory", required=True)
